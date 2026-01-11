@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<title>Disappearance</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Ricocheting (ricocheting@hotmail.com) -->
+<!-- Web Site:  http://www.ricocheting.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var theMoment = new Date();
+var rotate_delay = 3000; // 
+var theSecond = theMoment.getSeconds();
+var current = 1;
+var pic1, pic2;
+function window_onload()
+{
+   setTimeout("switchImage()",rotate_delay);
+    pic1 = new Image();  pic1.src = "IMG_1797.jpg";
+	pic2 = new Image();  pic2.src = "IMG_1798.jpg";
+
+}
+function switchImage()
+{
+//	debugger
+	var el1 = document.getElementById("12");
+	if(current)
+	{
+    	document.whichimage.src = pic1.src;
+    	el1.style.fontFamily="Arial";
+    	el1.style.fontStyle="Italic";
+    	el1.innerText="and disappeared";
+    }
+    else
+    {
+    	document.whichimage.src = pic2.src;
+    	el1.style.fontFamily="Arial";
+    	//el1.style.fontFamily="Courier";
+    	el1.style.fontStyle="Normal";
+    	el1.innerText="A lot of people were brought here by force...";    	
+    }
+	current = (current+1)%2;
+    setTimeout("switchImage()",rotate_delay);
+}
+
+
+//  End -->
+</script>
+
+</head>
+
+<body onload="window_onload()">
+<center>
+<h2>Memorial for Jewish prisoners in Dachau</h2>
+<IMG SRC="IMG_1798.jpg" NAME="whichimage"  width="644" height="486">
+<p id="12">A lot of people were brought here by force...</p>
+
+
+
+</center>
+
+</body>
+
+</html>
